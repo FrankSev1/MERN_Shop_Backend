@@ -4,9 +4,8 @@ app.use("/",(req,res)=>{
     res.send("Hola mundo");
 });
 
-app.listen(4000,()=>{
-
-    console.log("Server running at http://localhost:4000")
+app.listen(3000, () => {
+    console.log('Server started on port http://localhost:3000/');
 });
 
 
