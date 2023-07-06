@@ -1,2 +1,2 @@
-# MERN_Shop_Frontend
+# MERN_Shop_Backend
 
