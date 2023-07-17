@@ -1,10 +1,15 @@
 import mongoose from 'mongoose';
-import { Category } from './category';
+import { Products } from './product';
+
 
 const orderItemSchema = new mongoose.Schema({
     
-    name: {
-        type: String,
+    product: {
+        type: Products,
+        require: true,
+    },
+    quality: {
+        type: Number,
         require: true,
     }
     
