@@ -5,6 +5,7 @@ import * as dotenv from 'dotenv';
 
 import productsRouter from './routers/products';
 import categoryRouter from './routers/category';
+import UserRouter from './routers/user';
 import { createLanguageService } from 'typescript';
 
 const app = express();
@@ -16,6 +17,7 @@ app.use(morgan('tiny'));
 
 app.use(`${api}/product`, productsRouter);
 app.use(`${api}/category`, categoryRouter);
+app.use(`${api}/user`, UserRouter);
 
 mongoose.connect(process.env.MONGO_CONNECT!,{
     dbName: process.env.DB_NAME
