@@ -3,7 +3,7 @@ import morgan from 'morgan';
 import mongoose from 'mongoose';
 import * as dotenv from 'dotenv';
 
-import productsRouter from './routes/products';
+import productsRouter from './routers/products';
 import { createLanguageService } from 'typescript';
 
 const app = express();
